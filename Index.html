@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#1B4D5C">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <!-- SEO Meta Tags -->
+    <title>BELEOVART - Africa's Sovereign Digital Infrastructure Platform</title>
+    <meta name="description" content="BELEOVART: AI-powered satellite spectrum optimization (VART) and decentralized WiFi hotspot networks (VAVX). Africa's sovereign digital infrastructure platform.">
+    <meta name="keywords" content="satellite spectrum optimization, WiFi hotspot network, VART, VAVX, Africa digital infrastructure, LEO constellation, spectrum management, AI optimization">
+    <meta name="author" content="BELEOVART">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://beleovart.com">
+    <meta property="og:title" content="BELEOVART - Africa's Sovereign Digital Infrastructure Platform">
+    <meta property="og:description" content="AI-powered satellite spectrum optimization and decentralized WiFi networks for Africa's digital future.">
+    <meta property="og:site_name" content="BELEOVART">
+    <meta property="og:locale" content="en_ZA">
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://beleovart.com">
+    <meta name="twitter:title" content="BELEOVART - Africa's Sovereign Digital Infrastructure Platform">
+    <meta name="twitter:description" content="AI-powered satellite spectrum optimization and decentralized WiFi networks for Africa's digital future.">
+    <meta name="twitter:creator" content="@beleovart">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://beleovart.com">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%231B4D5C'/><text x='50' y='60' font-size='60' font-weight='bold' fill='white' text-anchor='middle'>BV</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "BELEOVART",
+      "url": "https://beleovart.com",
+      "description": "Africa's sovereign digital infrastructure platform powered by AI-driven satellite spectrum optimization and decentralized WiFi networks",
+      "sameAs": [
+        "https://www.linkedin.com/company/beleovart",
+        "https://twitter.com/beleovart"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4958 Jan Frederick Ave",
+        "addressLocality": "Randpark Ridge",
+        "addressRegion": "Gauteng",
+        "postalCode": "2154",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Customer Service",
+        "email": "admin-services@beleovart.com",
+        "telephone": "+27-87-898-8812"
+      }
+    }
+    </script>
+
+    <style>
+        /* ============================================
+           ROOT VARIABLES & GLOBAL STYLES
+           ============================================ */
+        :root {
+            --primary-color: #1B4D5C;
+            --secondary-color: #00D9FF;
+            --accent-gold: #FFB81C;
+            --text-dark: #2C3E50;
+            --text-light: #FFFFFF;
+            --bg-light: #F8F9FA;
+            --bg-white: #FFFFFF;
+            --border-color: #E0E0E0;
+            --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.15);
+            --font-primary: 'Montserrat', sans-serif;
+            --font-secondary: 'Inter', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            color: var(--text-dark);
+            background-color: var(--bg-white);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .navbar {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: var(--shadow);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.5rem;
+            font-weight: 700;
+            font-family: var(--font-primary);
+        }
+
+        .nav-logo svg {
+            width: 40px;
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+        }
+
+        .nav-link:hover {
+            color: var(--accent-gold);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger span {
+            width: 25px;
+            height: 3px;
+            background-color: var(--text-light);
+            margin: 5px 0;
+            transition: 0.3s;
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0F3A47 100%);
+            color: var(--text-light);
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            font-family: var(--font-primary);
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-content p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-gold);
+            color: var(--text-dark);
+        }
+
+        .btn-primary:hover {
+            background-color: #FFC93D;
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-light);
+            border: 2px solid var(--text-light);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--text-light);
+            color: var(--primary-color);
+        }
+
+        /* ============================================
+           SECTIONS
+           ============================================ */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            font-family: var(--font-primary);
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-color);
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: var(--font-primary);
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* ============================================
+           VART SECTION
+           ============================================ */
+        #vart {
+            background-color: var(--bg-light);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: var(--shadow);
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .feature-card h4 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            font-family: var(--font-primary);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        /* ============================================
+           BENEFITS SECTION
+           ============================================ */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .benefit-box {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0F3A47 100%);
+            color: var(--text-light);
+            padding: 2rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--accent-gold);
+        }
+
+        .benefit-box h4 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-family: var(--font-primary);
+        }
+
+        .benefit-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .benefit-box li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefit-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent-gold);
+            font-weight: bold;
+        }
+
+        /* ============================================
+           ABOUT SECTION
+           ============================================ */
+        #about {
+            background-color: var(--bg-white);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 2rem;
+            border-radius: 8px;
+            background: var(--bg-light);
+            transition: all 0.3s;
+        }
+
+        .value-card:hover {
+            background: var(--secondary-color);
+            color: var(--text-light);
+        }
+
+        .value-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .value-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-primary);
+        }
+
+        /* ============================================
+           TECHNOLOGY SECTION
+           ============================================ */
+        #technology {
+            background-color: var(--bg-light);
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .tech-card {
+            background: var(--text-light);
+            padding: 2rem;
+            border-radius: 8px;
+            border-top: 5px solid var(--secondary-color);
+            box-shadow: var(--shadow);
+        }
+
+        .tech-card h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-family: var(--font-primary);
+        }
+
+        /* ============================================
+           CONTACT SECTION
+           ============================================ */
+        #contact {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #0F3A47 100%);
+            color: var(--text-light);
+        }
+
+        #contact h2 {
+            color: var(--text-light);
+        }
+
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-group button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--accent-gold);
+            color: var(--text-dark);
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .form-group button:hover {
+            background-color: #FFC93D;
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        footer {
+            background-color: var(--text-dark);
+            color: var(--text-light);
+            padding: 3rem 20px 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h4 {
+            font-family: var(--font-primary);
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section a:hover {
+            color: var(--accent-gold);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--accent-gold);
+            color: var(--text-dark);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .nav-menu {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+
+            .hero-content p {
+                font-size: 1rem;
+            }
+
+            section h2 {
+                font-size: 1.8rem;
+            }
+
+            .features-grid,
+            .benefits-grid,
+            .tech-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="#00D9FF" stroke-width="3"/>
+                    <circle cx="50" cy="50" r="35" fill="none" stroke="#00D9FF" stroke-width="2"/>
+                    <ellipse cx="50" cy="50" rx="25" ry="15" fill="none" stroke="#1B4D5C" stroke-width="2"/>
+                    <circle cx="50" cy="30" r="8" fill="#1B4D5C"/>
+                    <path d="M 35 55 Q 50 70 65 55" fill="none" stroke="#FFB81C" stroke-width="3" stroke-linecap="round"/>
+                    <path d="M 35 45 Q 50 30 65 45" fill="none" stroke="#00D9FF" stroke-width="3" stroke-linecap="round"/>
+                    <text x="50" y="85" font-size="12" font-weight="bold" fill="#00D9FF" text-anchor="middle">BV</text>
+                </svg>
+                BELEOVART
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#vart" class="nav-link">VART</a></li>
+                <li><a href="#vavx" class="nav-link">VAVX</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#technology" class="nav-link">Technology</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Africa's Sovereign Digital Infrastructure Platform</h1>
+                <p>Connecting Worlds. Optimizing Signals.</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('vart').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VART SECTION -->
+    <section id="vart">
+        <div class="container">
+            <h2>🛰️ VART: Virtual Air Rights Throughput</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">AI-powered satellite spectrum optimization for maximum efficiency</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📡</div>
+                    <h4>Real-Time Signal Analysis</h4>
+                    <p>Analyze signal quality across multiple satellite constellations with advanced AI algorithms.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔮</div>
+                    <h4>Interference Prediction</h4>
+                    <p>Predict and mitigate interference with 92% accuracy using machine learning models.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Dynamic Frequency Allocation</h4>
+                    <p>Automatically allocate frequencies to maximize throughput and minimize latency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h4>Beam Forming Optimization</h4>
+                    <p>Optimize beam patterns to improve coverage and reduce power consumption.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h4>Power Control</h4>
+                    <p>Intelligent power management for optimal signal strength and efficiency.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Real-Time Dashboards</h4>
+                    <p>Monitor performance metrics and optimization results in real-time.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">VART Benefits</h3>
+            <div class="benefits-grid">
+                <div class="benefit-box">
+                    <h4>For Satellite Operators</h4>
+                    <ul>
+                        <li>Increase spectrum utilization by 40-60%</li>
+                        <li>Reduce interference incidents by 85%</li>
+                        <li>Improve customer satisfaction</li>
+                        <li>Maximize revenue per MHz</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For ISPs</h4>
+                    <ul>
+                        <li>Better service quality</li>
+                        <li>Lower operational costs</li>
+                        <li>Competitive advantage</li>
+                        <li>Improved customer retention</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For End Users</h4>
+                    <ul>
+                        <li>Faster internet speeds</li>
+                        <li>Lower latency</li>
+                        <li>More reliable connections</li>
+                        <li>Better value for money</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For Africa</h4>
+                    <ul>
+                        <li>Sovereign digital infrastructure</li>
+                        <li>Economic empowerment</li>
+                        <li>Technology leadership</li>
+                        <li>Digital inclusion</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VAVX SECTION -->
+    <section id="vavx" style="background-color: var(--bg-white);">
+        <div class="container">
+            <h2>📶 VAVX: Virtual Access Vertex Exchange</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Decentralized WiFi hotspot network for community connectivity</p>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h4>Hotspot Network Management</h4>
+                    <p>Manage thousands of WiFi hotspots across communities with a single platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h4>Revenue Sharing (70/10/20)</h4>
+                    <p>70% to hotspot owners, 10% to partners, 20% to BELEOVART for operations.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h4>User Engagement</h4>
+                    <p>Targeted advertising and engagement tools for maximum monetization.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h4>Security & Privacy</h4>
+                    <p>Enterprise-grade security with privacy-preserving user profiling.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h4>Analytics & Insights</h4>
+                    <p>Detailed analytics on user behavior, traffic patterns, and revenue.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h4>Easy Deployment</h4>
+                    <p>Simple setup process for hotspot owners to join the network.</p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 3rem;">VAVX Benefits</h3>
+            <div class="benefits-grid">
+                <div class="benefit-box">
+                    <h4>For Hotspot Owners</h4>
+                    <ul>
+                        <li>Earn 70% of revenue</li>
+                        <li>Passive income stream</li>
+                        <li>Easy to deploy</li>
+                        <li>Community impact</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For Users</h4>
+                    <ul>
+                        <li>Free or affordable WiFi</li>
+                        <li>Community-powered network</li>
+                        <li>Privacy-respecting service</li>
+                        <li>Local economic benefit</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For Advertisers</h4>
+                    <ul>
+                        <li>Targeted local campaigns</li>
+                        <li>High engagement rates</li>
+                        <li>Measurable results</li>
+                        <li>Community reach</li>
+                    </ul>
+                </div>
+                <div class="benefit-box">
+                    <h4>For Communities</h4>
+                    <ul>
+                        <li>Digital inclusion</li>
+                        <li>Economic development</li>
+                        <li>Local employment</li>
+                        <li>Community empowerment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="container">
+            <h2>About BELEOVART</h2>
+            
+            <div style="background: linear-gradient(135deg, var(--primary-color) 0%, #0F3A47 100%); color: var(--text-light); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: var(--text-light);">Our Mission</h3>
+                <p style="font-size: 1.1rem; margin-top: 1rem;">To empower Africa with sovereign, AI-driven digital infrastructure that optimizes global connectivity while creating economic opportunities for millions of people.</p>
+            </div>
+
+            <div style="background: linear-gradient(135deg, var(--secondary-color) 0%, #00B8D4 100%); color: var(--text-dark); padding: 2rem; border-radius: 8px; margin-bottom: 2rem;">
+                <h3 style="color: var(--text-dark);">Our Vision</h3>
+                <p style="font-size: 1.1rem; margin-top: 1rem;">Africa as a global leader in digital infrastructure innovation, where communities control their connectivity, data, and economic destiny.</p>
+            </div>
+
+            <h3 style="text-align: center; margin-top: 2rem;">Our Values</h3>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h4>Sovereignty</h4>
+                    <p>African-controlled infrastructure for African communities</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤝</div>
+                    <h4>Community</h4>
+                    <p>Empowering local participation and economic benefit</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💡</div>
+                    <h4>Innovation</h4>
+                    <p>Cutting-edge AI and technology for maximum impact</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🔒</div>
+                    <h4>Security</h4>
+                    <p>Enterprise-grade protection for data and privacy</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">📈</div>
+                    <h4>Sustainability</h4>
+                    <p>Long-term value creation for all stakeholders</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🎯</div>
+                    <h4>Excellence</h4>
+                    <p>Commitment to the highest standards in all we do</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNOLOGY SECTION -->
+    <section id="technology">
+        <div class="container">
+            <h2>Technology & Innovation</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">Powered by advanced AI, machine learning, and distributed systems</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="feature-icon">🧠</div>
+                    <h4>AI Spectrum Optimization</h4>
+                    <p>LSTM neural networks predict interference and optimize frequency allocation in real-time across multiple satellite constellations.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="feature-icon">🔗</div>
+                    <h4>Multi-Constellation Integration</h4>
+                    <p>Seamlessly integrate with Starlink, Amazon Kuiper, Galaxias, and other LEO constellations for maximum coverage.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="feature-icon">⚡</div>
+                    <h4>Edge Computing</h4>
+                    <p>Distributed processing at the edge for ultra-low latency and real-time optimization.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="feature-icon">🔐</div>
+                    <h4>Blockchain Integration</h4>
+                    <p>Smart contracts for transparent revenue distribution and decentralized hotspot management.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="feature-icon">📊</div>
+                    <h4>Advanced Analytics</h4>
+                    <p>Real-time dashboards with predictive analytics for performance monitoring and optimization.</p>
+                </div>
+                <div class="tech-card">
+                    <div class="feature-icon">🌐</div>
+                    <h4>Cloud-Native Architecture</h4>
+                    <p>Scalable, resilient infrastructure built on Kubernetes and microservices for global operations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; font-size: 1.1rem; margin-bottom: 1rem;">Have questions? We'd love to hear from you. Send us an inquiry and our team will respond shortly.</p>
+            
+            <form class="contact-form" onsubmit="handleContactForm(event)">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Send Inquiry</button>
+                </div>
+            </form>
+
+            <div style="text-align: center; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid rgba(255, 255, 255, 0.2);">
+                <p style="margin-bottom: 1rem;">📍 Randpark Ridge, Johannesburg, South Africa</p>
+                <p style="margin-bottom: 1rem;">📧 admin-services@beleovart.com</p>
+                <p style="margin-bottom: 1rem;">📞 +27 87 898 8812</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BELEOVART</h4>
+                <p>Africa's Sovereign Digital Infrastructure Platform</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/beleovart" target="_blank" title="LinkedIn">in</a>
+                    <a href="https://twitter.com/beleovart" target="_blank" title="X/Twitter">𝕏</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Products</h4>
+                <ul>
+                    <li><a href="#vart">VART</a></li>
+                    <li><a href="#vavx">VAVX</a></li>
+                    <li><a href="#technology">Technology</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 BELEOVART. All rights reserved. Connecting Worlds. Optimizing Signals.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Handle contact form submission
+        function handleContactForm(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+            
+            // Create inquiry object
+            const inquiry = {
+                name: name,
+                email: email,
+                phone: phone,
+                subject: subject,
+                message: message,
+                timestamp: new Date().toISOString()
+            };
+            
+            // Log to console (in production, this would send to a server)
+            console.log('Inquiry received:', inquiry);
+            
+            // Show success message
+            alert(`Thank you, ${name}! Your inquiry has been received. We'll contact you at ${email} within 24 hours.`);
+            
+            // Reset form
+            event.target.reset();
+        }
+
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        if (hamburger) {
+            hamburger.addEventListener('click', () => {
+                navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+            });
+        }
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
